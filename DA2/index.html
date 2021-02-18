@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Crazy Snake</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+The snake gameplay is not very original, it is the same core game that has been around for decades. The original part is the control scheme, instead of the classic arrow keys you now are met with this seemingly awkward mouse guiding system. You have to try to lead the snake instead of directing controlling it, which is a fun twist on the classic snake game.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The most interesting technical thing about my game is how the snake determines which way to move based on where the mouse is. I had to calculate a vector from the snake head to the mouse cursor and figure out which direction that vector points, then map it to the closest cardinal direction to determine the snake's movement.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+The example snake game that I based this on used sub-classes for the snake and food, which made a lot of sense from an object oriented perspective but the syntax was fairly confusing as it was difficult to modify parameters from outside the class, e.g. in the update function. I had to be creative about how I designed things, keeping this in mind. I had been making global variables as class variables of the scene, but those are inaccessible inside of the subclasses, so I had to rethink some things.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Most of the assets were borrowed from online sources:
+<ul>
+<li>Snake Body Sprite: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/games/snake/body.png">Body</a></li>
+<li>Apple Sprite: <a href="https://opengameart.org/content/fruits">Apple</a></li>
+<li>Wall Sprite: <a href="https://opengameart.org/content/big-pack-of-hand-painted-tiling-textures">Tile Textures</a></li>
+<li>Music: <a href="https://freesound.org/people/Suburbanwizard/sounds/442997/">FreeSound.org</a></li>
+<li>Apple Collect Sound: <a href="https://freesound.org/people/sharesynth/sounds/341227/">FreeSound.org</a></li>
+<li>You Lose Sound: <a href="https://freesound.org/people/deleted_user_877451/sounds/76376/">FreeSound.org</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+This game was based on the Snake Game example, and I borrowed a large portion of its code from there.
+</li>
+
+<li><strong>High Concept:</strong>
+This snake is out of control! Can you keep it alive?
+</li>
+
+<li><strong>Theme:</strong>
+I used the III challenege, since there are only ever two things on the screen, the snake and the target food.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Input: Indirect, Mouse <br>
+Randomness: A lot of Randomness <br>
+Play Styles: Director <br>
+Genres: Overhead
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The main mechanic is the directing of the snake with the mouse. It also incorporates the random move speed gain/loss whenever collecting an apple, but the main mechanic being tested is the leading the snake with the mouse.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want there to be tension and for the player to feel a little overwhelmed, like they know what they want but the dexerity required to excute is difficult. Instead of in normal snake where you are trying to think ahead and not trap yourself, this game is focused more on trying to keep control and get the snake to go where you want.
+</li>
+
+<li><strong>Gameplay:</strong>
+The only control is through the mouse, which the player uses to lead the snake. Running into the walls or the snake's body will end the game. The player attempts to collect apples and grow longer, which also slowly makes the snake speed up over time, although the speed gain is random and it can lose speed at some points.</li>
+
+<li><strong>Strategies:</strong>
+The most effective strategy is trying to line up the snake on the apple from a distance, so the player is able to easily walk up to it and collect it without having to do a last-second turn. There may be some strategy in how the snake moves, e.g. always giving yourself an escape path and coiling to take up less space.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+Since it is a simple snake game, there isn't any story or premise on display here. In theory a full game could include multiple levels with varied terrain, and have the player follow a story about the snake or try to complete a longer objective, but at the current state there is no real story elements.
+</li>
+
+<li><strong>Target Audience:</strong>
+People who enjoy snake but want a twist on the classic game.
+</li>
+
+<li><strong>Play Time:</strong>
+Under a minute, but the game can go on for quite awhile.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
