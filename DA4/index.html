@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Pop The Balloon!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?<br>
+The wind mechanic is an interesting method of controlling the character, which I thought was fairly original.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?<br>
+There is little technical merit to this game, the most interesting thing is the acceleration applied to the balloon when the button is pressed.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?<br>
+This was the first time I used a clickable button, so I had to figure out how they worked in phaser. I also learned how to use acceleration to control an object instead of just modifying its velocity.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Balloon Sprite: <a href="https://opengameart.org/content/balloons">Balloon</a></li>
+<li>Cactus Sprite: <a href="https://opengameart.org/content/cactus-3">Cactus</a></li>
+<li>Spikes Sprite: <a href="https://opengameart.org/content/spikes">Spikes</a></li>
+<li>Flames Sprite: <a href="https://opengameart.org/content/fire-wave-32x32">Flames</a></li>
+<li>Wind Sound: <a href="https://opengameart.org/content/wind-whoosh-loop">Wind Whoosh Effect</a></li>
+<li>Balloon Pop Sound: <a href="https://opengameart.org/content/3-pop-sounds">Pop Noise</a></li>
+<li>All other sprites and textures were made from scratch.</li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.<br>
+Clickable object code based on <a href = "https://github.com/photonstorm/phaser3-examples/blob/master/public/src/input/mouse/click%20sprite.js#L17">this.</a>
+There isn't really an example that resembles my game, at least not one that I could find.
+</li>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.<br>
+Guide your balloon through a set of treacherous obsticles, and discover the different ways that you can Pop The Balloon!
+</li>
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.<br>
+I used the Murphy's Law challenge, as the goal is to pop the balloon in a variety of ways.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.<br>
+Input: Clickable Buttons<br>
+Randomness: (Have already used the entire row)<br>
+Genre: This game doesn't really fit into any of the genres listed, it is more of a simplistic for-fun game<br>
+Play Style: Joker<br>
+</li>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?<br>
+The main mechanic this prototype is testing is the movement scheme for the balloon, where you press the button to apply the wind effect to it.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?<br>
+I want them to feel like they are able to guide the balloon through the level, albeit with some difficulty, and discover all the different endings that are possible.
+</li>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.<br>
+The balloon is controlled by pressing the wind button at the bottom of the screen. This applies a wind from the left side, which pushes the balloon right. Otherwise, the balloon slowly drifts to the left. Using these controls, the balloon can be directed through the level and into the desired path.
+</li>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?<br>
+Planning ahead is required, as the button only controls the acceleration, which means the player needs to have an idea of where they want to go in advance.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?<br>
+A rogue balloon has escaped the birthday party! Where will it end up? <br>
+We follow this balloon into the atmosphere as it makes its journey upwards, onto new and exciting horizons.
+</li>
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.<br>
+This game mostly serves as a time killer for someone who is bored.
+</li>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?<br>
+A single playthrough lasts under a minute, to experience the entire game would take around 5 minutes.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
