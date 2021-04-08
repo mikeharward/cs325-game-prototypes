@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Escape the Volcano!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?
+The two-player puzzle platforming that the game allows for is fairly unique, and can be used to create interesting puzzles. The rising lava also adds an element of tension and forces the players to act quickly.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?
+The most difficult part was detecting when the players left the buttons, as phaser only allows for overlap checking. I had to test for overlap, and auotmatically reset the button when the player on it jumped, which ended up working well. The other main issue was trying to prevent collision with the buttons, as they are very prone to getting pushed around. I ended up using the level design to mitigate this, but it would have to be addressed further if the game were to become more complex.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?
+Controlling two players at once was really interesting, I hadn't had to make a more complex control scheme yet, and learned a lot from that. I also had to do more collision and overlapping than the simple tests I've used so far, so learning more about how those functions work in phaser was quite interesting. I think the easy part was the rising lava, as it was fairly simple to make and implement.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Many of the textures originiated from this source from <a href="http://kenney.nl">kenney.nl</a>: <a href="https://opengameart.org/content/platformer-art-pixel-redux">Spritesheet</a></li>
+<li>Flames Sprite: <a href="https://opengameart.org/content/fire-wave-32x32">Flames</a></li>
+<li>Lever Sound: <a href="https://freesound.org/people/DrMinky/sounds/167048/">FreeSound.org</a></li>
+<li>Victory Sound: <a href="https://freesound.org/people/jimhancock/sounds/376318/">FreeSound.org</a></li>
+<li>Background Music: <a href="https://freesound.org/people/Mrthenoronha/sounds/476547/">FreeSound.org</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+This is an iteration of last week's game, the main change is the addition of the falling platforms, which lets the game have the level go on forever, instead of simply ending at the top of the screen. This makes the game expandable into a proper platformer with a more open world feel.
+</li>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.
+Work together to try and escape before the rising lava ends your journey in a firey demise!
+</li>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+The on/off buttons for the appearing platforms is the core mechanic being evaluated.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+There should be a sense of tension and suspense, as they have to quickly devise a plan on how they will outrun the lava.
+</li>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+The game is meant for two players at the same computer/keyboard. The left player is controlled using WASD, and the right player is controlled using the arrow keys. The player can move left and right and jump a short distance. The player can move on top of colored buttons to allow thier partner to walk on the corresponding colored platform. If either player touches the lava that is rising from the bottom, both players lose, and both players must reach the flag at the top of the screen to win.
+</li>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+Quick thinking and coordination is required to beat the game. Hopefully the players will be able to communicate what they are thinking and where they are going so they can effectively work together.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+The players have found themselves at the bottom of an erupting volcano! They must slowly climb through a treacherous course to try and survive. The players must work together and support eachother, or they will surely perish. The story here matches the gameplay quite smoothly, and motivates the players on their goal.
+</li>
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+This game is targetted at fans of platformer or puzzle games, and is aimed at two people who want to play a cooperative game together.
+</li>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+The game is designed to be played in a minute or so, but has decent replay value. It also will likely take a few tries to be beaten by new players.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
