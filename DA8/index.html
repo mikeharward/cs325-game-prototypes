@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Evade the Guards!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Evade the Guards!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?<br>
+This is a top down stealth game, where you try to avoid guards to reach checkpoints. The concept has been done many times before, but the originality in a game like this comes from the unique paths you can make from the enemies' movement.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?<br>
+Making the patrol paths was interesting, I used a global timer and moved them in a direction for half of it, then switched directions for the other half. This is why all the enemies turn around at the same time. If I wanted to make a more complex path or have out of sync enemies I could add additional timers or split the timer into more segments than just 2. <br>
+Making the player movement feel natural was also interesting, I added quite a few checks to have the movement act in the manner I wanted so it doesn't feel clunky, which is important in a movement-based game like this.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?<br>
+I hadn't done movement in this manner before, and I was really pleased with the way it turned out. I didn't know if a timer was a good way to approach the patrol paths, but it ended up working out quite well.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Background: <a href="https://opengameart.org/content/grass-1">Grass Image</a></li>
+<li>Victory Sound: <a href="https://freesound.org/people/jimhancock/sounds/376318/">FreeSound.org</a></li>
+<li>Defeat Sound: <a href="https://freesound.org/people/cabled_mess/sounds/350986/">FreeSound.org</a></li>
+<li>Music: <a href="https://freesound.org/people/furbyguy/sounds/331874/">FreeSound.org</a></li>
+
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.<br>
+I did not use a phaser example for this game.
+</li>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.<br>
+Use your evasiveness to sneak past the guards and achieve victory!
+</li>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?<br>
+The core mechanic for this prototype is the interaction between the player and the enemies, primarily the feel of the movement and hitboxes.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?<br>
+I want players to feel pressured to escape, and to try and think ahead to plan a route through the guards. The game should provide a decent balance between skill and strategy.
+</li>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.<br>
+Use WASD keys to move the blue circle, and attempt to avoid the red diamonds and reach the yellow square on the right. Additional levels could be made that involve more advanced concepts, like picking up items or interacting with the environment.
+The level ends when the player reaches the yellow square, and the player loses if they touch any of the red diamonds.
+</li>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?<br>
+Planning a route from the beginning as well as having quick reactions to dodge the enemies will be critical to achieving victory.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?<br>
+The player starts off trying to inflitrate a heavily guarded compound. As they get inside and start to investigate, they learn about the evil plans that their adversary has been working on. With this information, they must now sneak out, while still remaining undetected. The gameplay helps make the narrative, as the stealth and surrounding world can be built into the levels fairly easily.
+</li>
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.<br>
+This game appeals to a wide variety of players that want to play a dodging or evasiveness game.
+</li>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?<br>
+This prototype takes around a minute to play.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
